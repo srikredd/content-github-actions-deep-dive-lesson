@@ -31,7 +31,7 @@ jobs:
           path: ${{ github.sha }}.zip
 
 
-upload:
+  upload:
   runs-on: ubuntu-latest
   needs: build
   steps:
