@@ -23,7 +23,7 @@ jobs:
             flake8 . --count --exit-zero --max-complexity=10 --max-line-length=127 --statistics
   build:
     runs-on: ubuntu-latest
-    nees: lint
+    needs: lint
     steps:
       - name: Check out code
         uses: actions/checkout@v2
